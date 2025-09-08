@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Configurações básicas da página -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Como Usar | ClimaTempo</title>
+
+  <!-- Ícone  -->
+  <link rel="icon" href="src/imagens/icones/logotipo-icon.png" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+  <!-- Estilos principais -->
+  <link rel="stylesheet" href="src/css/clima-tempo.css" />
+  <link rel="stylesheet" href="src/css/suporte.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <!-- Logo do site -->
+    <div class="logo">
+      <a href="index.html" style="text-decoration: none; color: inherit;">🌎 ClimaTempo</a>
+    </div>
+
+    <div class="navbar-right">
+      <!-- Link de voltar -->
+      <nav class="menu-links">
+        <a href="clima-tempo.html">← Voltar</a>
+      </nav>
+
+      <!-- Ícones sociais -->
+      <div class="social-icons">
+        <a href="https://github.com/paulaPSOx" target="_blank">
+          <img src="src/imagens/icones/github.svg" alt="GitHub" class="icone" />
+        </a>
+        <a href="https://www.linkedin.com/in/oliveiraspaula/" target="_blank">
+          <img src="src/imagens/icones/linkedin-in.svg" alt="LinkedIn" class="icone" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal com instruções de uso -->
+  <main>
+    <div class="card instrucoes-card">
+      <h1>📖 Como Usar o ClimaTempo</h1>
+      <p>
+        O <strong>ClimaTempo</strong> é um site simples e prático para consultar a previsão do tempo em qualquer cidade.
+      </p>
+
+      <!-- Lista de instruções -->
+      <div class="lista-instrucoes-card">
+        <div class="instrucao-item">
+          <span class="instrucao-emoji">🌍</span>
+          <div class="instrucao-texto">
+            <strong>Localização Automática:</strong> ao entrar no site, o sistema usa sua localização atual para mostrar
+            o clima.
+          </div>
+        </div>
+
+        <div class="instrucao-item">
+          <span class="instrucao-emoji">🔎</span>
+          <div class="instrucao-texto">
+            <strong>Pesquisa Manual:</strong> digite o nome de uma cidade no campo de pesquisa e clique na lupa.
+          </div>
+        </div>
+
+        <div class="instrucao-item">
+          <span class="instrucao-emoji">🏙️</span>
+          <div class="instrucao-texto">
+            <strong>Nome da Cidade:</strong> exibido no topo do card, indicando de qual local são os dados.
+          </div>
+        </div>
+
+        <div class="instrucao-item">
+          <span class="instrucao-emoji">☁️</span>
+          <div class="instrucao-texto">
+            <strong>Ícone do Clima:</strong> mostra a condição atual (sol, nuvens, chuva, neve, neblina, etc.).
+          </div>
+        </div>
+
+        <div class="instrucao-item">
+          <span class="instrucao-emoji">🌡️</span>
+          <div class="instrucao-texto">
+            <strong>Temperatura:</strong> exibida em graus Celsius (°C).
+          </div>
+        </div>
+
+        <div class="instrucao-item">
+          <span class="instrucao-emoji">💧</span>
+          <div class="instrucao-texto">
+            <strong>Umidade:</strong> mostra a porcentagem de umidade do ar.
+          </div>
+        </div>
+
+        <div class="instrucao-item">
+          <span class="instrucao-emoji">💨</span>
+          <div class="instrucao-texto">
+            <strong>Vento:</strong> velocidade do vento em km/h.
+          </div>
+        </div>
+
+        <div class="instrucao-item">
+          <span class="instrucao-emoji">🎨</span>
+          <div class="instrucao-texto">
+            <strong>Tema Automático:</strong> as cores mudam de acordo com o horário local da cidade consultada.
+          </div>
+        </div>
+      </div>
+
+      <!-- Agradecimento -->
+      <p class="agradecimento">✨ Obrigada por usar o ClimaTempo! ✨</p>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>
+      &copy; 2025
+      <a href="https://github.com/paulaPSOx" target="_blank" class="github-link">PaulaPSOx</a>.
+      Todos os direitos reservados.
+      Dados meteorológicos fornecidos por
+      <a href="https://openweathermap.org/" target="_blank" class="github-link">OpenWeatherMap</a>.
+    </p>
+  </footer>
+
+  <!-- Script -->
+  <script src="src/js/hours.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+/* Card da página de instruções */
+.instrucoes-card {
+  width: 100%;
+  max-width: 900px; 
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  transition: background 0.6s ease, color 0.6s ease;
+  overflow: hidden;
+}
+
+/* Título do card */
+.instrucoes-card h1 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0077ff;
+  border-left: 5px solid #0077ff;
+  padding-left: 12px;
+}
+
+/* Parágrafos do card */
+.instrucoes-card p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: inherit;
+  margin-bottom: 18px;
+}
+
+/* Lista de instruções */
+.lista-instrucoes {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.lista-instrucoes li {
+  margin-bottom: 14px;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.lista-instrucoes li::before {
+  content: "✔";
+  font-weight: bold;
+  color: #0077ff;
+  flex-shrink: 0;
+}
+
+/* Mensagem de agradecimento */
+.agradecimento {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 25px;
+  padding: 12px 10px;
+  border-radius: 12px;
+  background: rgba(0, 119, 255, 0.1);
+  color: #0077ff;
+}
+
+/* Container da lista */
+.lista-instrucoes-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Cada item */
+.instrucao-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+/* Emoji */
+.instrucao-emoji {
+  font-size: 18px;
+  flex-shrink: 0;
+  line-height: 1.2;
+}
+
+/* Texto */
+.instrucao-texto {
+  font-size: 14px;
+  line-height: 1.2;
+  color: inherit;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .instrucoes-card h1 {
+    font-size: 24px;
+  }
+
+  .instrucoes-card p {
+  font-size: 15px;
+  }
+
+  .instrucao-item {
+    padding: 5px 6px;
+    gap: 6px;
+  }
+
+  .instrucao-emoji {
+    font-size: 16px;
+  }
+
+  .instrucao-texto {
+    font-size: 12px;
+  }
+
+  .agradecimento {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .instrucoes-card h1 {
+    font-size: 20px;
+  }
+
+  .instrucoes-card p {
+  font-size: 13px;
+  }
+
+  .instrucao-item {
+    padding: 4px 4px;
+    gap: 4px;
+  }
+
+  .instrucao-emoji {
+    font-size: 14px;
+  }
+
+  .instrucao-texto {
+    font-size: 11px;
+  }
+
+  .agradecimento {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .instrucoes-card h1 {
+    font-size: 18px;
+  }
+
+  .instrucoes-card p {
+  font-size: 12px;
+  }
+
+  .instrucao-item {
+    padding: 3px 3px;
+    gap: 3px;
+  }
+
+  .instrucao-emoji {
+    font-size: 13px;
+  }
+
+  .instrucao-texto {
+    font-size: 10px;
+  }
+
+  .agradecimento {
+    font-size: 10px;
+  }
+}
